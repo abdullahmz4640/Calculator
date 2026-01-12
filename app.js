@@ -28,7 +28,7 @@ const calculation = () => {
     let currentValue= "";
     let initailValue = [];
     let finalValue =[];
-    let opretor = "" ;
+    let opretor = [];
 
     for(let i=0; i<=arr.length-1; i++){
         
@@ -36,13 +36,26 @@ const calculation = () => {
 
         if(num >= '0' && num <= '9'){
             currentValue += num ;
-            console.log (currentValue);
+           // console.log (currentValue);
 
         } else if(num ==='+' || num ==='-' || num ==='*' || num ==='/'){
            
-             initailValue = currentValue.map(number);
-             console.log(initailValue);
+             initailValue.push(Number(currentValue));
+             console.log (currentValue);
+             opretor.push(num);
+             currentValue = "";
+             
         }
+
+           console.log(opretor);
+           console.log(initailValue);
+
+        }
+
+        if(currentValue!== ""){
+            finalValue.push(Number(currentValue));
+
+            console.log(finalValue);
     } 
     
 }

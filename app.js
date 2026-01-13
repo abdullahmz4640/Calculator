@@ -20,59 +20,15 @@ for (let i = 0; i < button.length; i++) {
             result = eval(display.value);
             console.log(result);
             display.value = "";
-            display.value += result;
+            display.value = result;
         }
-        else if(value === "c"){
+
+         if(value === "c"){
             display.value= "";
-        }
+         }
 
     })
     
 }
 
 
-// const calculation = () => {
-
-//     let arr = display.value.split('');
-//     console.log (arr);
-
-//     let currentValue= "";
-//     let initailValue = [];
-//     let finalValue =[];
-//     let opretor = [];
-
-//     for(let i=0; i<=arr.length-1; i++){
-        
-//         let num = arr[i];
-
-//         if(num >= '0' && num <= '9'){
-//             currentValue += num ;
-//            // console.log (currentValue);
-
-//         } else if(num ==='+' || num ==='-' || num ==='*' || num ==='/'){
-           
-//              initailValue.push(Number(currentValue));
-//              console.log (currentValue);
-//              opretor.push(num);
-//              currentValue = "";
-             
-//         }
-
-//            console.log(opretor);
-//            console.log(initailValue);
-
-//         }
-
-//          if(currentValue!== ""){
-//             finalValue.push(Number(currentValue));
-
-//             console.log(finalValue);
-//             console.log (currentValue);
-
-//          } 
-
-//          if(opretor="+"){
-//             initailValue + finalValue;
-//          }
-    
-// }
